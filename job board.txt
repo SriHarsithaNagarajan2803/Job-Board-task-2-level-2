@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Job Board - Home</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #2e86de;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a {
+      color: white;
+      margin-left: 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    h1 {
+      margin-bottom: 0.5rem;
+    }
+    section.featured-jobs {
+      background: white;
+      padding: 1rem;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .job {
+      border-bottom: 1px solid #ddd;
+      padding: 0.75rem 0;
+    }
+    .job:last-child {
+      border-bottom: none;
+    }
+    .job-title {
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #2e86de;
+      text-decoration: none;
+    }
+    .job-company {
+      font-style: italic;
+      color: #555;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #eee;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+      nav {
+        margin-top: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo"><h2>Job Board</h2></div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Job Listings</a>
+    <a href="#">Employer Dashboard</a>
+    <a href="#">Candidate Dashboard</a>
+    <a href="#">Login</a>
+  </nav>
+</header>
+
+<main>
+  <h1>Welcome to the Job Board</h1>
+  <p>Your one-stop destination to find the best job opportunities.</p>
+
+  <section class="featured-jobs">
+    <h2>Featured Job Listings</h2>
+
+    <div class="job">
+      <a href="#" class="job-title">Frontend Developer</a>
+      <div class="job-company">Tech Innovations Inc.</div>
+      <div>Location: Remote | Posted: 2 days ago</div>
+    </div>
+
+    <div class="job">
+      <a href="#" class="job-title">Marketing Specialist</a>
+      <div class="job-company">Creative Minds Ltd.</div>
+      <div>Location: New York, NY | Posted: 5 days ago</div>
+    </div>
+
+    <div class="job">
+      <a href="#" class="job-title">Data Analyst</a>
+      <div class="job-company">DataWorks</div>
+      <div>Location: San Francisco, CA | Posted: 1 week ago</div>
+    </div>
+  </section>
+
+  <section style="margin-top: 2rem; text-align:center;">
+    <a href="#" style="background:#2e86de; color:white; padding:0.75rem 1.5rem; border-radius:4px; text-decoration:none; font-weight:bold;">
+      Job Board FOR DEMO CLICK HERE
+    </a>
+  </section>
+</main>
+
+<footer>
+  &copy; 2025 Job Board. All rights reserved.
+</footer>
+
+</body>
+</html>
